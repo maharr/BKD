@@ -1,0 +1,47 @@
+<!-- INCLUDE ucp_header.html -->
+
+<table class="tablebg" width="100%" cellspacing="1">
+<tr>
+	<th colspan="2" valign="middle">{L_BOARDWATCH}</th>
+</tr>
+<!-- IF ERROR -->
+	<tr>
+		<td class="row3" colspan="2" align="center"><span class="gensmall error">{ERROR}</span></td>
+	</tr>
+<!-- ENDIF -->
+
+<!-- IF S_VIEW_BOARDWATCH_OPTIONS -->
+	<tr>
+		<td class="row1" width="50%"><b class="genmed">{L_BOARDWATCH_BOARDWATCH}:</b></td>
+		<td class="row2">
+			<input type="radio" class="radio" name="boardwatch" value="0"<!-- IF S_BOARDWATCH_YES --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_YES}</span>&nbsp; &nbsp;
+			<input type="radio" class="radio" name="boardwatch" value="1"<!-- IF S_BOARDWATCH_YES_BUT --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_BOARDWATCH_YES_BUT}</span>&nbsp; &nbsp;
+			<input type="radio" class="radio" name="boardwatch" value="2"<!-- IF S_BOARDWATCH_NO --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_NO}</span>
+		</td>
+	</tr>
+<!-- ENDIF -->
+
+<!-- IF S_VIEW_FORUMWATCH_OPTIONS -->
+	<tr>
+		<td class="row1" width="50%"><b class="genmed">{L_BOARDWATCH_FORUMWATCH}:</b></td>
+		<td class="row2">
+			<input type="radio" class="radio" name="forumwatch" value="0"<!-- IF S_FORUMWATCH_YES --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_YES}</span>&nbsp; &nbsp;
+			<input type="radio" class="radio" name="forumwatch" value="1"<!-- IF S_FORUMWATCH_YES_BUT --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_FORUMWATCH_YES_BUT}</span></td>
+	</tr>
+<!-- ENDIF -->
+
+<!-- IF S_VIEW_TOPICWATCH_OPTIONS -->
+<tr>
+	<td class="row1" width="50%"><b class="genmed">{L_BOARDWATCH_TOPICWATCH}:</b></td>
+	<td class="row2">
+		<input type="radio" class="radio" name="topicwatch" value="0"<!-- IF S_TOPICWATCH_YES --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_YES}</span>&nbsp; &nbsp;
+		<input type="radio" class="radio" name="topicwatch" value="1"<!-- IF S_TOPICWATCH_YES_BUT --> checked="checked"<!-- ENDIF --> /><span class="gen">{L_TOPICWATCH_YES_BUT}</span></td>
+</tr>
+<!-- ENDIF -->
+
+<tr>
+	<td class="cat" colspan="2" align="center">{S_HIDDEN_FIELDS}<input class="btnmain" type="submit" name="submit" value="{L_SUBMIT}" />&nbsp;&nbsp;<input class="btnlite" type="reset" value="{L_RESET}" name="reset" /></td>
+</tr>
+</table>
+
+<!-- INCLUDE ucp_footer.html -->

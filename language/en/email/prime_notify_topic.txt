@@ -1,0 +1,14 @@
+Subject: Topic Reply Notification - "{TOPIC_TITLE}"
+
+Hello {USERNAME}, the topic "{TOPIC_TITLE}" at "{SITENAME}" has received a new reply since your last visit. You can view this post by clicking on the following link: {U_NEWEST_POST}
+_____________________________________________________________________
+Topic: {TOPIC_TITLE}
+Author: {AUTHOR}
+Message:
+{MESSAGE}
+_____________________________________________________________________
+
+If you want to view the topic, click the following link:
+{U_TOPIC}
+
+{EMAIL_SIG}

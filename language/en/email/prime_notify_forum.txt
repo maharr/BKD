@@ -1,0 +1,11 @@
+Subject: Forum Notification - {FORUM_NAME}
+
+Hello {USERNAME}, the forum "{FORUM_NAME}" at "{SITENAME}" has received a new reply since your last visit. You can view the forum by clicking on the following link: {U_FORUM}
+_____________________________________________________________________
+Topic: {TOPIC_TITLE}
+Author: {AUTHOR}
+Message:
+{MESSAGE}
+_____________________________________________________________________
+
+{EMAIL_SIG}

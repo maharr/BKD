@@ -1,0 +1,58 @@
+<!-- INCLUDE ucp_header.html -->
+
+<form id="ucp" method="post" action="{S_UCP_ACTION}"{S_FORM_ENCTYPE}>
+
+<h2>{L_BOARDWATCH}</h2>
+
+<div class="panel">
+	<div class="inner"><span class="corners-top"><span></span></span>
+
+	<fieldset>
+	<!-- IF ERROR --><p class="error">{ERROR}</p><!-- ENDIF -->
+
+	<!-- IF S_VIEW_BOARDWATCH_OPTIONS -->
+		<dl>
+			<dt><label for="boardwatch0">{L_BOARDWATCH_BOARDWATCH}:</label></dt>
+			<dd>
+				<label for="boardwatch0"><input type="radio" name="boardwatch" id="boardwatch0" value="0"<!-- IF S_BOARDWATCH_YES --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label for="boardwatch1"><input type="radio" name="boardwatch" id="boardwatch1" value="1"<!-- IF S_BOARDWATCH_YES_BUT --> checked="checked"<!-- ENDIF --> /> {L_BOARDWATCH_YES_BUT}</label>
+				<label for="boardwatch2"><input type="radio" name="boardwatch" id="boardwatch2" value="2"<!-- IF S_BOARDWATCH_NO --> checked="checked"<!-- ENDIF --> /> {L_NO}</label>
+			</dd>
+		</dl>
+	<!-- ENDIF -->
+
+	<!-- IF S_VIEW_FORUMWATCH_OPTIONS -->
+		<dl>
+			<dt><label for="forumwatch0">{L_BOARDWATCH_FORUMWATCH}:</label></dt>
+			<dd>
+				<label for="forumwatch0"><input type="radio" name="forumwatch" id="forumwatch0" value="0"<!-- IF S_FORUMWATCH_YES --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label for="forumwatch1"><input type="radio" name="forumwatch" id="forumwatch1" value="1"<!-- IF S_FORUMWATCH_YES_BUT --> checked="checked"<!-- ENDIF --> /> {L_FORUMWATCH_YES_BUT}</label>
+			</dd>
+		</dl>
+	<!-- ENDIF -->
+
+	<!-- IF S_VIEW_TOPICWATCH_OPTIONS -->
+		<dl>
+			<dt><label for="topicwatch0">{L_BOARDWATCH_TOPICWATCH}:</label></dt>
+			<dd>
+				<label for="topicwatch0"><input type="radio" name="topicwatch" id="topicwatch0" value="0"<!-- IF S_TOPICWATCH_YES --> checked="checked"<!-- ENDIF --> /> {L_YES}</label>
+				<label for="topicwatch1"><input type="radio" name="topicwatch" id="topicwatch1" value="1"<!-- IF S_TOPICWATCH_YES_BUT --> checked="checked"<!-- ENDIF --> /> {L_TOPICWATCH_YES_BUT}</label>
+			</dd>
+		</dl>
+	<!-- ENDIF -->
+
+	<!-- IF S_NO_BOARDWATCH_OPTIONS -->{L_BOARDWATCH_NO_OPTIONS}<!-- ENDIF -->
+
+	</fieldset>
+
+	<span class="corners-bottom"><span></span></span></div>
+</div>
+
+<fieldset class="submit-buttons">
+	{S_HIDDEN_FIELDS}<input type="reset" value="{L_RESET}" name="reset" class="button2" />&nbsp;
+	<input type="submit" name="submit" value="{L_SUBMIT}" class="button1" />
+	{S_FORM_TOKEN}
+</fieldset>
+</form>
+
+<!-- INCLUDE ucp_footer.html -->
